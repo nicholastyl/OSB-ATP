@@ -184,7 +184,7 @@ Create the secret.
 
 ```bash
 kubectl create -f charts/oci-service-broker/samples/atp/atp-demo-secret.yaml
-```bash
+```
 
 ## Examine your Kubernetes with Kubernetes Dashboard
 
