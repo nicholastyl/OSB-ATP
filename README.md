@@ -178,6 +178,13 @@ There are two steps to installing and configuring the Service Broker:
 
 - You can review the section on **Injecting credentials and configurations** to understand how your application can access the downloaded wallet as a secret in your Kubernetes cluster. However, a working `wercker.yml` has been created for you.
 
+- Create secret with DB Admin user password and wallet password. Edit the oci-service-broker/samples/atp/atp-demo-secret.yaml with proper base64 encoded value of the passwords
+
+Create the secret.
+
+```bash
+kubectl create -f charts/oci-service-broker/samples/atp/atp-demo-secret.yaml
+```bash
 
 ## Examine your Kubernetes with Kubernetes Dashboard
 
